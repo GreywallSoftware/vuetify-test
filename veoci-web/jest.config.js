@@ -34,7 +34,6 @@ module.exports = {
     '<rootDir>/test/unit/utils/jestSetup.js'
   ],
 
-
   testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
@@ -48,9 +47,15 @@ module.exports = {
     '**/test/unit/components/Pages/blocks/ButtonBlock.spec.js'
   ],
 
+  // transform: {
+  //   '^.+\\.[jt]sx?$': ['babel-jest', { rootMode: 'upward' }],
+  //   '^.+\\.mjs$': ['babel-jest', { rootMode: 'upward' }],
+  //   '^.+\\.vue$': '@vue/vue3-jest'
+  // },
   transform: {
-    '^.+\\.js$': ['babel-jest', { rootMode: 'upward' }],
-    '^.+\\.vue$': '@vue/vue3-jest'
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.vue$': '@vue/vue3-jest',
+    '^.+\\.mjs$': 'babel-jest',
   },
   // transform: undefined,
 
