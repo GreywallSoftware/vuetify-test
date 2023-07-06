@@ -1,0 +1,35 @@
+.DS_Store
+node_modules/
+.yarn/
+/dist/
+*/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+/a11y-dashboard/output/
+selenium-debug.log
+veoci-web/.stylelintcache
+
+# Editor directories and files
+.idea
+.vscode
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Cordova files to ignore
+/www/
+/cordova/node_modules/
+/cordova/platforms/
+/cordova/plugins/
+
+*/**/coverage
+/veoci-web/a11y/a11y-dashboard/**/*
+/veoci-web/.stylelintcache
+
+**/install-state.gz
+/.yarn/cache/

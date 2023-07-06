@@ -1,0 +1,17 @@
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
+/dhtmlx-gantt/
+/html5-qrcode/**/*
+
+DecimalFormat.js
+Strophe.js
+Crypto.js
+jquery.atwho.js
+jquery-ui.min.js
+veoci-js.es5.js
+vue-froala.js
+
+**/translations/**/*
