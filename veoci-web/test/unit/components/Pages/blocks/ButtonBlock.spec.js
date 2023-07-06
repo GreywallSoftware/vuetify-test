@@ -1,6 +1,6 @@
 import '@mock/mockJsdom'
 
-import ButtonBlock from '@/components/container/pages/blocks/ButtonBlock'
+import ButtonBlock from '@/components/container/pages/blocks/ButtonBlock.vue'
 import { mount } from '@vue/test-utils'
 
 describe('ButtonBlock.vue Test', () => {
