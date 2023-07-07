@@ -52,11 +52,11 @@ describe('BorderEditor.vue', () => {
     expect(wrapper.vm.innerBorder.style).toBe('solid')
   })
 
-  it('emits borderUpdated event when innerBorder changes', async () => {
+  it('emits update:border event when innerBorder changes', async () => {
     wrapper.vm.innerBorder.style = 'dashed'
     await wrapper.vm.$nextTick()
 
-    expect(wrapper.emitted('borderUpdated')).toBeTruthy()
-    expect(wrapper.emitted('borderUpdated')[0]).toEqual([{ ...wrapper.vm.innerBorder }])
+    expect(wrapper.emitted('update:border')).toBeTruthy()
+    expect(wrapper.emitted('update:border')[0]).toEqual([{ ...wrapper.vm.innerBorder }])
   })
 })

@@ -22,7 +22,6 @@ module.exports = {
     '^@test(.*)$': '<rootDir>/test/unit/$1',
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/test/unit/__mocks__/fileMock.js',
     '\\.(css|scss)$': '<rootDir>/test/unit/__mocks__/styleMock.js',
-    '^vue/$': 'node_modules/vue/dist/vue.runtime.esm-bundler.js',
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@shared(.*)$': '<rootDir>/../veoci-shared$1',
     '^@node(.*)$': '<rootDir>/node_modules$1'
@@ -50,7 +49,7 @@ module.exports = {
   ],
 
   transform: {
-    '^.+\\.js$': ['babel-jest', { rootMode: 'upward' }],
+    '^.+\\.[mc]?js$': ['babel-jest', { rootMode: 'upward' }],
     '^.+\\.vue$': '@vue/vue3-jest'
   },
   // transform: undefined,
