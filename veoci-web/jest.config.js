@@ -24,6 +24,7 @@ module.exports = {
     '\\.(css|scss)$': '<rootDir>/test/unit/__mocks__/styleMock.js',
     '^vue/$': 'node_modules/vue/dist/vue.runtime.esm-bundler.js',
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^@shared(.*)$': '<rootDir>/../veoci-shared$1',
     '^@node(.*)$': '<rootDir>/node_modules$1'
   },
 
@@ -45,7 +46,7 @@ module.exports = {
   // The glob patterns Jest uses to detect test files
   testMatch: [
     // '**/test/unit/components/**/?(*.)+(spec|test).[tj]s?(x)'
-    '**/test/unit/components/Pages/blocks/ButtonBlock.spec.js'
+    '**/test/unit/components/Pages/blockSettings/BorderEditor.spec.js'
   ],
 
   transform: {
