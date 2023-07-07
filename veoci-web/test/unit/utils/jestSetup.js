@@ -1,8 +1,9 @@
 /**
  * Common setup for all jest tests.  This is where you put any mocks that you need to be shared among the different components
  */
-import { createVuetify } from 'vuetify/dist/vuetify.esm'
-import { VBottomSheet, VDataTable, VSkeletonLoader } from 'vuetify/dist/vuetify-labs.esm'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import { VBottomSheet, VDataTable, VSkeletonLoader } from 'vuetify/labs/components'
 import VueTestUtils from '@vue/test-utils'
 import _ from 'lodash'
 
@@ -97,6 +98,7 @@ VueTestUtils.config.global.plugins = [
       iconfont: 'mdi' // default
     },
     components: {
+      ...components,
       VDataTable,
       VSkeletonLoader,
       VBottomSheet
